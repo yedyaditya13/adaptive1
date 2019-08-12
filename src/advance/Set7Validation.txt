@@ -1,0 +1,73 @@
+while(i < jlhDataPelajar)
+		{
+			System.out.println("Data Pelajar ke-"+(i+1));
+			
+			while(validData)
+			{
+				System.out.print("Nomor Pelajar : ");
+				studentNo = input.nextLine();
+				
+				if (studentNo.equals(""))
+				{
+					System.out.println("Nomor Pelajar Tidak Boleh Kosong!!!	");
+					validData=true;
+				}
+				else{
+				validData=false;
+				break;
+				}
+			}
+			
+			System.out.print("Nama : ");
+			name =  input.nextLine();
+			
+			
+			
+			System.out.print("Tempat Lahir : ");
+			birthPlace =  input.nextLine();
+			
+			
+			sdf = new SimpleDateFormat("dd/MM/yyyy");
+			System.out.print("Tanggal Lahir : ");
+			strDate =  input.nextLine();
+			
+			
+				birthDate = new Date();
+			try
+			{
+				
+				birthDate = sdf.parse(strDate);
+				System.out.println("Berhasil");
+				
+			}
+			catch(ParseException e)
+			{
+				System.out.println("Tanggal lahir harus dalam format dd/MM/yyyy !!!");
+			}
+			
+			System.out.print("Jenis Kelamin : ");
+			gender =  input.nextLine();
+			System.out.print("Alamat : ");
+			address =  input.nextLine();
+			System.out.print("Nomor Telepon : ");
+			phoneNumber =  input.nextLine();
+			System.out.print("Jurusan : ");
+			faculty =  input.nextLine();
+			
+			System.out.print("\n");
+			i++;
+			
+			/*Student stdn = new Student();
+			stdn.setStudentNo(studentNo);
+			stdn.setName(name);
+			stdn.setBirthPlace(birthPlace);
+			stdn.setBirthDate(birthDate);
+			stdn.setGender(gender);
+			stdn.setAddress(address);
+			stdn.setPhoneNumber(phoneNumber);
+			stdn.setFaculty(faculty);*/
+			
+			
+			//students.add(stdn);
+			
+		}

@@ -1,0 +1,31 @@
+Ujian
+
+Materi: OOP
+
+Deskripsi
+=========
+* Buat program penjumlahan 2 bilangan.
+* Class penjumlahan harus berada pada package edu.trilink.
+* Class penjumlahan 2 bilangan harus implementasi interface Mathematics.
+public interface Mathematics
+{
+    double plus(double number1, double number2);
+}
+* Method yang digunakan untuk menjumlahkan 2 bilangan adalah method yang ada pada interface Mathematics.
+
+Kebutuhan aplikasi
+==================
+* Program akan meminta pengguna untuk mengisi bilangan ke-1 dan bilangan ke-2.
+* Program akan menampilkan hasil penjumlahan bilangan yang di isi oleh pengguna.
+
+Tampilan
+========
+Masukkan bilangan ke-1: {Bilangan1}
+Masukkan bilangan ke-2: {Bilangan2}
+{Bilangan1} + {Bilangan2} = {Bilangan3}
+
+Contoh
+======
+Masukkan bilangan ke-1: 4
+Masukkan bilangan ke-2: 3
+4 + 3 = 7
